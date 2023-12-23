@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:paddingEnd="10dp"
+    android:layout_gravity="center"
+
+
+
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/l1">
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="200dp"
+    android:src="@drawable/est">
+
+</ImageView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="450dp"
+        android:layout_below="@id/l1"
+        android:id="@+id/l2"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"
+            android:src="@drawable/photooooo">
+
+        </ImageView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/l2"
+        android:id="@+id/l3"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+       android:layout_marginLeft="30dp"
+            android:text="Empowering Minds, Shaping Futures."
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textSize="30dp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/l3"
+        android:gravity="center"
+        >
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:textSize="25dp"
+            android:text="NEXT"
+           android:backgroundTint="@color/black"
+            android:textColor="@color/white"
+            android:id="@+id/next"
+            />
+
+
+
+    </LinearLayout>
+</RelativeLayout>

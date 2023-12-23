@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="30dp"
+    android:paddingEnd="15dp"
+    android:gravity="center"
+    android:paddingTop="25dp"
+android:background="@drawable/bggform"
+    tools:context=".form">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/i1"
+        android:layout_marginBottom="20dp"
+        >
+
+            <ImageView
+                android:layout_width="350dp"
+                android:layout_height="100dp"
+                android:src="@drawable/online">
+
+            </ImageView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/i1"
+        android:id="@+id/l1"
+        android:layout_marginBottom="20dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hostel Registration "
+            android:textSize="40dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+
+   <LinearLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_below="@id/l1"
+       android:layout_marginBottom="20dp"
+       android:id="@+id/l2">
+       <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Name:"
+          android:textStyle="italic"
+           android:textColor="@color/black"
+           android:layout_marginRight="65dp"
+          android:textSize="25dp"/>
+       <EditText
+              android:layout_width="250dp"
+              android:layout_height="wrap_content"
+              android:id="@+id/name"
+              android:singleLine="true"
+              ></EditText>
+   </LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/l2"
+    android:id="@+id/l3">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gender:"
+        android:textColor="@color/black"
+        android:textStyle="italic"
+        android:textSize="25dp"
+        android:layout_marginRight="55dp"/>
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/rg1">
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/M"
+        android:textColor="@color/black"
+        android:text="Male"
+        android:textSize="20dp"
+        />
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/F"
+        android:textColor="@color/black"
+        android:text="Female"
+        android:textSize="20dp"
+        />
+    </RadioGroup>
+</LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_below="@id/l3"
+        android:id="@+id/l4"
+        >
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Course:"
+    android:textColor="@color/black"
+    android:textStyle="italic"
+    android:layout_marginRight="55dp"
+    android:textSize="25dp"
+    >
+</TextView>
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/rg2"
+            >
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="UG"
+            android:textColor="@color/black"
+            android:id="@+id/ug"
+            android:textSize="20dp"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PG"
+                android:textColor="@color/black"
+                android:id="@+id/pg"
+                android:textSize="20dp"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PHD"
+                android:textColor="@color/black"
+                android:id="@+id/phd"
+                android:textSize="20dp"/>
+
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/l4"
+        android:id="@+id/l5"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Department:"
+            android:textColor="@color/black"
+            android:layout_marginRight="20dp"
+            android:textSize="25dp"
+            android:textStyle="italic"/>
+        <EditText
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/dept"
+            android:singleLine="true"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/l5"
+        android:id="@+id/l6">
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Class:"
+               android:textColor="@color/black"
+               android:textStyle="italic"
+               android:layout_marginRight="90dp"
+               android:textSize="25dp"
+               />
+        <EditText
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:id="@+id/clas"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/l7"
+        android:layout_below="@id/l6"
+>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:textColor="@color/black"
+            android:text="Merit Rank:"
+            android:layout_marginRight="40dp"
+            android:textStyle="italic"/>
+            <EditText
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:id="@+id/rank"
+                ></EditText>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/l8"
+        android:layout_below="@id/l7"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:text="City:"
+            android:textColor="@color/black"
+            android:layout_marginRight="115dp"
+            android:textStyle="italic"/>
+        <EditText
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:layout_marginRight="80dp"
+            android:id="@+id/city"
+            ></EditText>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/l9"
+        android:layout_below="@id/l8"
+        android:orientation="horizontal">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Hostel Preference:"
+    android:textStyle="italic"
+    android:textColor="@color/black"
+    android:layout_marginRight="20dp"
+    android:textSize="25dp"/>
+        <Spinner
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/hostel"
+            android:textColor="@color/black"
+           />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/l9"
+        android:gravity="center"
+        android:layout_marginTop="25dp"
+        >
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:backgroundTint="@color/black"
+        android:textSize="30dp"
+        android:id="@+id/Submit">
+
+    </Button>
+
+    </LinearLayout>
+</RelativeLayout>
