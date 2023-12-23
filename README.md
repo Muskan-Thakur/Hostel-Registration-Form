@@ -7,3 +7,6 @@
 - Generate reference ID for each eligible registered candidate BH/MSc/Psychology/BH1.
 
 - The other activity should display the Student information captured along with the reference ID and Hostel number and City.
+
+- ![Screenshot_20231223-225950_hostelregistration~2](https://github.com/Muskan-Thakur/Hostel-Registration-Form/assets/106293646/4801cbf9-111c-4e7e-a9f7-82f39f05fb87)
+
